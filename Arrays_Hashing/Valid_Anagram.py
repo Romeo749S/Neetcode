@@ -5,10 +5,20 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
-        for n in s:
-            if n not in t:
+        hash = dict()
+        for i in s:
+            if i not in hash:
+                hash[i] = 0
+            hash[i] += 1
+        for i in t:
+            if i not in hash:
+                return False  
+            hash[i] -= 1
+        for i in hash:
+            if hash[i] != 0:
                 return False
-        return len(t) == len(s)
+        return True
+        
     
 
 def main():
