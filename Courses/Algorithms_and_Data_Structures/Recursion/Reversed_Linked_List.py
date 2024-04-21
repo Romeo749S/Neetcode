@@ -15,18 +15,18 @@ class Solution(object):
         :rtype: ListNode
         """
 
-        if not head or not head.next:
+        if not head or not head.next :
             return head
         
         new_head = self.reverseList(head.next)
         front = head.next
         front.next = head
         head.next = None
-        return new_head.data
+        return new_head
     
 def main():
     sol = Solution()
-    print(sol.reverseList(sol.head))
+    print(sol.reverseList(sol.head).data)
 
 if __name__ == "__main__":
     main()
