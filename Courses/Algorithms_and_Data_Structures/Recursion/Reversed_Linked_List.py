@@ -23,7 +23,7 @@ class Solution(object):
         front.next = head
         head.next = None
         return new_head
-    
+    #
 def main():
     sol = Solution()
     print(sol.reverseList(sol.head).data)
