@@ -14,4 +14,4 @@ class Solution:
                 r = k - 1
             else:
                 l = k + 1
-        return res
+        return  res 
