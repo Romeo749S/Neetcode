@@ -95,8 +95,8 @@ class TreeMap:
     def remove(self, key: int) -> None:
         self.root = self.trav4(self.root, key)
         
-    def getInorderKeys(self) -> List[int]:
+    def getInorderKeys(self) :
         self.trav3(self.root)
         g = self.arr.copy()
         self.arr.clear()
-        return g
+        return  g
