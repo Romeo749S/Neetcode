@@ -25,6 +25,6 @@ class Solution(object):
         if self.hasPathSum(root.left, targetSum):
             return True
         if self.hasPathSum(root.right, targetSum):
-            return True
+            return  True
         self.arr.pop()
         return False
