@@ -15,4 +15,4 @@ class Solution:
                 res.append(i)
                 if len(res) == k:
                     return res
-        return  res
+        return res
